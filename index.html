@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+	*{
+		box-sizing: border-box;
+	}
+	body{
+		background-color: #B3BEBA;
+	}
+		header{
+			border: 1px solid black;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			padding: 20px;
+			text-align: center;
+			background-image: url("ideaheader.jpg");
+		}
+       h1{
+          font-size: 39px;
+       }
+   .navbar{
+   	background-color: grey;
+   	overflow: auto;
+   	white-space: nowrap;
+   }
+    .navbar a{
+    	display: inline-block;
+    	color: white;
+    	text-align: center;
+    	padding: 15px;
+    	text-decoration: none;
+    	text-transform: capitalize;
+    }
+    #active {
+     background-color: green;
+    }
+   .navbar a:hover{
+   	background-color: black;
+   }
+   .row div{
+   	float: left;
+   	text-align: center;
+   }/*
+   .row:after{
+   	content: "";
+   	display: table;
+   	clear: both;
+   }*/
+   .left{
+   	width: 20%;
+   	box-sizing: border-box;
+   	background-color: #7FB9A3;
+   	height: 375px;
+   }
+   .middle{
+   	width: 60%;
+   	box-sizing: border-box;
+   	border-right: 1px solid black;
+   	border-left: 1px solid black;
+   	background-color: #109261;
+   	overflow: auto;
+   	height: 375px;
+   	border-bottom-left-radius: 20px;
+   	border-bottom-right-radius: 50px;
+   }
+   .right{
+   	width: 20%;
+   	height: 375px;
+   	box-sizing: border-box;
+   	background-color: #9FFF90;
+   }
+   .footer{
+   	position: fixed;
+   	left: 0;
+   	bottom: 0;
+   	width: 100%;
+   	background-color: red;
+   	color: black;
+   	text-align: center;
+   	height: 30px;
+   	line-height: 25px;
+   	border-top-left-radius: 40px;
+   	border-top-right-radius: 40px;
+   }
+ol li{
+  border-bottom: 1px solid black;
+  font-size: 2vw;
+  margin-left: 10px;
+  color: #BACBC5;
+}
+#tophead{
+	background-color: #E5C30F;
+	color: #2E362F;
+	width: 100%;
+	text-transform: capitalize;
+	position: sticky;
+	top: 0;
+	height: 80px;
+	border-bottom-right-radius: 70px;
+	border-bottom-left-radius: 70px;
+	font-size: 2vw;
+}
+.note{
+	position: fixed;
+	bottom: 5%;
+	left: 38%;
+
+}
+    @keyframes raj{
+    	0% {color: #FF684C; font-size: 10px;}
+    	50% {color: #D02000; font-size: 15px;}
+    	100% {color: red; font-size: 20px;}
+    }
+    @keyframes sakshi{
+    	0% {color: #130705; font-size: 40px;}
+    	50%{color: #D02000; font-size: 40px;}
+    	100%{color: #FF2800; font-size: 40px;}
+    }
+    @media only screen and (max-width: 600px){
+      *{padding: 0; margin: 0;}
+      .left {width: 100%; position: absolute; top: 155%;}
+      .middle {width: 100%; position: absolute; top: 25%; border-bottom-right-radius: 30px; border-bottom-left-radius: 30px;}
+      .right {width: 100%; position: absolute; top: 90%;}
+      .note{position: fixed; bottom: 7%;}
+      .footer{font-size: 3vw;}
+    }
+	</style>
+	<title>Home of iDEABazar</title>
+</head>
+<body>
+<header>
+	<h1>Header</h1>
+</header>
+<div class="navbar">
+	<a href="index.html" id="active">home</a>
+	<a href="topideas.html">top ideas</a>
+	<a href="sendideas.html">send ideas</a>
+	<a href="aboutus.html">about us</a>
+	<a href="contactus.html">contact us</a>
+</div>
+<div class="row">
+	<div class="left">
+		<h3 style="font-size: 4vw; line-height: 175px;">last month top 5 ideas</h3>
+	</div>
+	<div class="middle">
+		<div id="tophead">
+		<h1>find here more idea <b style="animation-name: sakshi; animation-duration: 1s; animation-iteration-count: infinite;">&#9759</b></h1>
+	</div>
+	<div>
+		<ol reversed>
+			<li>this is idea no 1this is idea no 1this is idea no 1this is idea no 1this is idea no 1</li>
+			<li>this is idea no 2<a href="#">this is idea no 1</a> </li>
+			<li>this is idea no 3</li>
+			<li>his is idea no 1this is idea no 1this is idea no 1this is idea no 1this is idea no 1this is idea no 1this is idea no 1this is idea no 1this is idea no 1this is idea no 5his is idea no 1this is idea no 1this is idea no 1this is idea no 1this is idea no 1this is idea no 1this is idea no 1this is idea no 1this is idea no 1this is idea no 5his is idea no 1this is idea no 1this is idea no 1this is idea no 1this is idea no 1this is idea no 1this is idea no 1this is idea no 1this is idea no 1this is idea no 5this is idea no 4</li>
+			<li>this is idea no 1this is idea no 1this is idea no 1this is idea no 1this is idea no 1this is idea no 1this is idea no 1this is idea no 1this is idea no 1this is idea no 5</li>
+		</ol>
+	</div>
+	<div class="note">
+		<p>
+		<b style="animation-name: raj; animation-iteration-count: infinite; animation-duration: 1s; animation-timing-function: ease-out;">&#9757Note.</b>Slide upper and show more idea
+	</p>
+</div>
+	</div>
+	<div class="right">
+		<h1 style="font-size: 3vw; line-height: 400px;"> adverstisment</h1>
+	</div>
+</div>
+<div class="footer">
+	<b>CopyRight&#169</b>IdeaBazar<sup><b>&#8482</b></sup> &#9755 <b>Power and Hosted &#174</b> <b>&#946</b>logger and <b>G</b>ithub
+</div>
+
+
+
+
+
+   
+</body>
+</html>

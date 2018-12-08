@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+  <script src="https://use.fontawesome.com/bc5a795453.js"></script>
+	<style type="text/css">
+	*{
+		box-sizing: border-box;
+	}
+	body{
+		background-color: #B3BEBA;
+	}
+		header{
+			border: 1px solid black;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			padding: 20px;
+			text-align: center;
+			background-image: url("ideaheader.jpg");
+		}
+       h1{
+          font-size: 39px;
+       }
+   .navbar{
+   	background-color: grey;
+   	overflow: auto;
+   	white-space: nowrap;
+   	position: sticky;
+   	top: 0;
+   }
+    .navbar a{
+    	display: inline-block;
+    	color: white;
+    	text-align: center;
+    	padding: 15px;
+    	text-decoration: none;
+    	text-transform: capitalize;
+    }
+    #active {
+     background-color: green;
+    }
+    #active:hover{
+    	background-color: black;
+    }
+   .navbar a:hover{
+   	background-color: black;
+   }
+   .footer{
+   	position: fixed;
+   	left: 0;
+   	bottom: 0;
+   	width: 100%;
+   	background-color: red;
+   	color: black;
+   	text-align: center;
+   	height: 30px;
+   	line-height: 25px;
+   	border-top-left-radius: 40px;
+   	border-top-right-radius: 40px;
+   }
+   table{
+    position: absolute;
+    left: 25%;
+    font-size: 2vw;
+    border: none;
+    margin-bottom: 35px;
+   }
+   table, td, th{
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+   }
+   table th{
+    border: 2px solid black;
+    border-right: none;
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
+    }
+   table td{
+    font-family: 'Charmonman', cursive;
+    border: 2px solid white;
+    border-left: none;
+    border-top-left-radius: 15%;
+    border-bottom-left-radius: 15%;
+   }
+   table tr th{
+    background-color: #17A972;
+    color: #D0D2D2;
+   }
+   table tr td{
+    background-color: #1A2320;
+    color: #E9E9E9;
+   }
+   table caption{
+    background-color: #DBE0DE;
+    color: #050908;
+    font-family: 'Charmonman', cursive;
+   }
+   @media only screen and (max-width: 600px){
+    .contact table {font-size: 3vw; position: absolute; left: 0; width: 100%;}
+    .footer{font-size: 3vw;}
+   }
+	</style>
+	<title>Contact Us of iDEABazar</title>
+</head>
+<body>
+<header>
+	<h1>Header</h1>
+</header>
+<div class="navbar">
+	<a href="index.html">home</a>
+	<a href="topideas.html">top ideas</a>
+	<a href="sendideas.html">send ideas</a>
+	<a href="aboutus.html">about us</a>
+	<a href="contactus.html" id="active">contact us</a>
+</div>
+<div class="contact">
+  <table>
+    <caption><i class="fa fa-info-circle fa-lg"> Contact Information</i></caption>
+    <tr>
+      <th><i class="fa fa-globe fa-lg"> Website Owner Name</i></th>
+      <td>Rupesh Kumar Mandal</td>
+    </tr>
+    <tr>
+      <th><i class="fa fa-envelope fa-lg"> Email Id</i></th>
+      <td><a href="mailto: rr006777@gmail.com" style="color: #E9E9E9;">rr006777@gmail.com</a></td>
+    </tr>
+    <tr>
+      <th><i class="fa fa-phone-square fa-lg"> Phone No</i></th>
+      <td>+918709618266</td>
+    </tr>
+    <tr>
+      <th><i class="fa fa-whatsapp fa-lg"> Whatsapp No</i></th>
+      <td>+918709618266</td>
+    </tr>
+    <tr>
+      <th><i class="fa fa-facebook-square fa-lg"> Facebook Page</i></th>
+      <td>Comming Soon</td>
+    </tr>
+    <tr>
+      <th><i class="fa fa-address-book fa-lg"> Address</i></th>
+      <td>At Budhikhar<br>Post-Office Sahiya<br>JhaJha Jamui Bihar<br><a href="https://pincode.net.in/BIHAR/JAMUI/J/JHAJHA" style="color: #E9E9E9;" target="-blank">Pin-Code 811308</a> </td>
+    </tr>
+  </table>
+  
+</div>
+<div class="footer">
+  <b>CopyRight&#169</b>IdeaBazar<sup><b>&#8482</b></sup> &#9755 <b>Power and Hosted &#174</b> <b>&#946</b>logger and <b>G</b>ithub
+</div>
+</body>
+</html>

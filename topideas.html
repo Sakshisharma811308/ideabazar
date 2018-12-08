@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+	*{
+		box-sizing: border-box;
+	}
+	body{
+		background-color: #B3BEBA;
+	}
+		header{
+			border: 1px solid black;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			padding: 20px;
+			text-align: center;/*
+			position: sticky;
+			top: 8px;*/
+			background-image: url("ideaheader.jpg");
+		}
+       h1{
+          font-size: 39px;
+       }
+   .navbar{
+   	background-color: grey;
+   	overflow: auto;
+   	white-space: nowrap;
+   	position: sticky;
+   	top: 0;
+   }
+    .navbar a{
+    	display: inline-block;
+    	color: white;
+    	text-align: center;
+    	padding: 15px;
+    	text-decoration: none;
+    	text-transform: capitalize;
+    }
+    #active {
+     background-color: green;
+    }
+    #active:hover{
+    	background-color: black;
+    }
+   .navbar a:hover{
+   	background-color: black;
+   }
+   .footer{
+   	position: fixed;
+   	left: 0;
+   	bottom: 0;
+   	width: 100%;
+   	background-color: red;
+   	color: black;
+   	text-align: center;
+   	height: 30px;
+   	line-height: 25px;
+   	border-top-left-radius: 40px;
+   	border-top-right-radius: 40px;
+   }
+   .row div{
+   	float: left;
+   	text-align: center;
+   	box-sizing: border-box;
+   	margin-bottom: 50px;
+   	margin-top: 10px;
+   }
+    .row:after{
+   	content: "";
+   	display: table;
+   	clear: both;
+   }
+   .left{
+   	width: 40%;
+   	height: auto;
+   }
+   .middle{
+   	width: 20%;
+   	height: 400px;
+    line-height: 300px;
+   	border-left: 1px solid black;
+   	border-right: 1px solid black;
+   }
+   .middle h1{
+    font-size: 3vw;
+   }
+   .right{
+   	width: 40%;
+   	height: auto;
+   }
+   .tooltip{
+   	background-color: #17A972;
+   	color: #15231E;
+   	width: 100%;
+   	text-align: center;
+   	text-transform: capitalize;
+   	overflow: auto;
+   	position: sticky;
+   	top: 48px;
+   	border-bottom-right-radiu: ;s: 20px;
+   	border-bottom-left-radius: 20px;
+   }
+   @media only screen and (max-width: 600px){
+    .left {width: 50%;}
+    .middle {width: 50%;}
+    .right {width: 100%}
+    .footer{font-size: 3vw;}
+   }
+	</style>
+	<title>Top Idea in iDEABazar</title>
+</head>
+<body>
+<header>
+	<h1>Header</h1>
+</header>
+<div class="navbar">
+	<a href="index.html">home</a>
+	<a href="topideas.html" id="active">top ideas</a>
+	<a href="sendideas.html">send ideas</a>
+	<a href="aboutus.html">about us</a>
+	<a href="contactus.html">contact us</a>
+</div>
+<div class="tooltip">
+	<h1>top idea for bunisiness</h1>
+</div>
+<div class="row">
+	<div class="left">
+		<ol>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li>10</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li>10</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li>10</li>
+		</ol>
+	</div>
+	<div class="middle"><h1>Advertisment</h1></div>
+	<div class="right">right</div>	
+</div>
+<div class="footer">
+	<b>CopyRight&#169</b>IdeaBazar<sup><b>&#8482</b></sup> &#9755 <b>Power and Hosted &#174</b> <b>&#946</b>logger and <b>G</b>ithub
+</div>
+</body>
+</html>
